@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_3"
+        android:background="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="@dimen/dp_5"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/upshop_image"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100" />
+        <TextView
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/tv_cover"
+            android:text="@string/Cover"
+            android:layout_width="120dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/upshop_image"/>
+    </RelativeLayout>
+
+</LinearLayout>

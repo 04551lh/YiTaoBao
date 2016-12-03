@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/whitesmoke"
+        android:id="@+id/rv_upshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="@dimen/dp_8"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/ShopType"
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/sp_20"
+                        android:layout_width="@dimen/layout"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:id="@+id/et_upshop_type"
+                        android:layout_width="@dimen/layout"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ShopName"
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/sp_20"
+                        android:layout_width="@dimen/layout"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:id="@+id/et_upshop_name"
+                        android:layout_width="@dimen/layout"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="@dimen/dp_8"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/sp_20"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ShopPrice"
+                        android:layout_width="@dimen/layout"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:id="@+id/et_upshop_price"
+                        android:layout_width="@dimen/layout"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/sp_20"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/dp_37"
+                        android:layout_weight="1"
+                        android:text="@string/ShopDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_margin="@dimen/dp_20"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:id="@+id/et_upshop_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/bt_upshop"
+            android:text="@string/ShopExit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</LinearLayout>
